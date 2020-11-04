@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes example {
+            from {transform: translateX(0px);}
+            to {transform: translateX(-182px);}
+        }
+
+        
+
+        #imageSlider {
+            animation-name: example;
+            animation-duration: 2s;
+            animation-iteration-count: infinite
+        }
+    </style>
+</head>
+<body>
+    <div width id="window" style="background-color: aqua; width: 182px; height: 200px; margin: 0 auto; overflow: hidden;">
+        <div id="imageSlider" style="display: flex;">
+            <img src="./me.png" width="200px" height="200px" />
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="200px" height="200px" />
+            <img src="https://i.kinja-img.com/gawker-media/image/upload/c_scale,f_auto,fl_progressive,pg_1,q_80,w_1600/rs6xug48dqzxub1ayz6p.jpg" width="200px" height="200px" />
+        </div>     
+    </div>
+</body>
+</html>
