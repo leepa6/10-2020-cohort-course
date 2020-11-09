@@ -1,0 +1,32 @@
+@keyframes example {
+    from {transform: translateX(0px);}
+    to {transform: translateX(-1500px);}
+}
+
+#imageSlider {
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#window {
+    overflow: hidden;
+    width: 500px;
+    height: 400px
+}
+
+#imageSlider2 {
+    display: flex;
+}
+
+#prev {
+    position: relative;
+    left: 450px;
+    top: -100px
+}
+
+#next {
+    position: relative;
+    right: -600px;
+    top: -100px;
+}
