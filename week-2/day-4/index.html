@@ -8,17 +8,17 @@
     <script src="index.js"></script>
 </head>
 <body>
-    <h2 style="text-align: center;">Animated Carousel</h2>
-    <div width id="window" style="width: 500px; height: 400px; margin: 0 auto;">
-        <div id="imageSlider" style="display: flex;">
+    <h2>Animated Carousel</h2>
+    <div class="slider" id="windowcss">
+        <div id="imageSlider">
             <img src="https://www.thewonderforest.com/wp-content/uploads/2017/06/jasaper-national-park-1024x683.jpg" width="500px" height="400px" alt="" />
             <img src="https://img.huffingtonpost.com/asset/5cd9dd102100003500d09f13.jpeg?ops=scalefit_960_noupscale" width="500px" height="400px"  alt="" />
             <img src="https://i.insider.com/5b1ec49b5e48ec03088b45a1?width=1100&format=jpeg&auto=webp" width="500px" height="400px" alt=""/>
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/1200px-Flag_of_Canada_%28Pantone%29.svg.png" width="500px" height="400px" alt=""/>
         </div>     
     </div>
-    <h2 style="text-align: center;">JavaScript Carousel</h2>
-    <div id="window" style="margin: 0 auto;">
+    <h2>JavaScript Carousel</h2>
+    <div id="windowjs">
         <div id="imageSlider2">
             <img width="500px" height="400px" src="https://www.thewonderforest.com/wp-content/uploads/2017/06/jasaper-national-park-1024x683.jpg" alt="">
             <img width="500px" height="400px" src="https://img.huffingtonpost.com/asset/5cd9dd102100003500d09f13.jpeg?ops=scalefit_960_noupscale" alt="">
@@ -26,7 +26,9 @@
             <img width="500px" height="400px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/1200px-Flag_of_Canada_%28Pantone%29.svg.png" alt="">
         </div>
     </div>
-    <button onclick="prevImage()" style="margin 0 auto" id="prev">prev</button>
-    <button onclick="nextImage()" style="margin 0 auto" id="next">next</button>
+    <div class="centerItems">
+        <button onclick="prevImage()">prev</button>
+        <button onclick="nextImage()">next</button>
+    </div>
 </body>
 </html>

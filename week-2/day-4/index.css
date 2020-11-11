@@ -1,18 +1,46 @@
 @keyframes example {
-    from {transform: translateX(0px);}
+    0% {transform: translateX(0px);}
+    10% {transform: translateX(0px);}
+    30% {transform: translateX(-500px);}
+    40% {transform: translateX(-500px);}
+    50% {transform: translateX(-1000px);}
+    60% {transform: translateX(-1000px);}
+    70% {transform: translateX(-1500px);}
+    80% {transform: translateX(-1500px);}
+    90% {transform: translateX(-2000px);}    
+    100% {transform: translateX(-2000px);}
+}
+
+/*    from {transform: translateX(0px);}
     to {transform: translateX(-1500px);}
+}*/
+
+.slider {
+    width: 500px; 
+    height: 400px; 
+    margin: 0 auto;
+}
+
+#windowcss {
+    overflow: hidden;
+    width: 500px;
+    height: 400px
 }
 
 #imageSlider {
     animation-name: example;
-    animation-duration: 4s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
+    display: flex;
+    animation-timing-function: ease-in-out;
 }
 
-#window {
+#windowjs {
     overflow: hidden;
     width: 500px;
-    height: 400px
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
 }
 
 #imageSlider2 {
@@ -20,13 +48,22 @@
 }
 
 #prev {
-    position: relative;
-    left: 450px;
-    top: -100px
+    position: absolute;
+    top: 50%;
+    left: 5%;
 }
 
 #next {
-    position: relative;
-    right: -600px;
-    top: -100px;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+}
+
+h2 {
+    text-align: center;
+}
+
+.centerItems {
+    display: flex;
+    justify-content: center;
 }
